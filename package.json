@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "check": "prettier --write . && next lint"
   },
   "dependencies": {
     "next": "15.4.1",
@@ -20,6 +22,8 @@
     "@types/react-dom": "^19.1.6",
     "eslint": "^9.31.0",
     "eslint-config-next": "15.4.1",
+    "eslint-config-prettier": "^10.1.5",
+    "prettier": "3.6.2",
     "typescript": "^5.8.3"
   }
 }
