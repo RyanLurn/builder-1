@@ -6,9 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint:js": "next lint",
+    "lint:css": "pnpm dlx stylelint \"**/*.css\"",
     "format": "prettier --write .",
-    "check": "prettier --write . && next lint"
+    "check": "pnpm run lint:js && pnpm run lint:css && pnpm run format"
   },
   "dependencies": {
     "next": "15.4.1",
@@ -24,6 +25,8 @@
     "eslint-config-next": "15.4.1",
     "eslint-config-prettier": "^10.1.5",
     "prettier": "3.6.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0",
     "typescript": "^5.8.3"
   }
 }
