@@ -32,7 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="h-screen w-screen">{children}</div>
         </ThemeProvider>
       </body>
     </html>
