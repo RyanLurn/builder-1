@@ -19,7 +19,7 @@ export default function LeftSidebar() {
   return (
     <div className="h-full w-3xs bg-sidebar p-2">
       <LeftSidebarHeader activeTab={activeTab} switchTab={switchTab} />
-      <Separator className="my-2" />
+      <Separator className="my-4" />
       {activeTab === "pages" && <LeftSidebarPagesTab />}
       {activeTab === "layers" && <LeftSidebarLayersTab />}
       {activeTab === "assets" && <LeftSidebarAssetsTab />}
